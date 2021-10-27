@@ -11,7 +11,7 @@
   <title>Nguyễn Ánh|Fontend</title>
 </head>
 
-<body>
+<body style="background-color: rgba(0, 0, 0, 0.295)">
   <div class="container">
     <div class="row text-center bg-black link-light">
       <div class="col-3">
@@ -61,38 +61,42 @@
       mxh: [{
         name: "facebook",
         url: "https://www.facebook.com/"
+      },
+      {
+        name: "elearning",
+        url: "https://elearning.edsolabs.com/vi/slides/slide/thong-tin-khoa-hoc-97?fullscreen=1"
       }],
       app: [
         {
-        name: "router",
-        url: "https://reactrouter.com/web/guides/quick-start"
-      },
+          name: "router",
+          url: "https://reactrouter.com/web/guides/quick-start"
+        },
         {
-        name: "react icon",
-        url: "https://react-icons.github.io/react-icons/icons?name=cg"
-      },
+          name: "react icon",
+          url: "https://react-icons.github.io/react-icons/icons?name=cg"
+        },
         {
-        name: "reacttrap",
-        url: "https://reactstrap.github.io/components/buttons/#Close-icon"
-      },
+          name: "reacttrap",
+          url: "https://reactstrap.github.io/components/buttons/#Close-icon"
+        },
         {
-        name: "redux",
-        url: "https://redux.js.org/introduction/installation"
-      },
+          name: "redux",
+          url: "https://redux.js.org/introduction/installation"
+        },
         {
-        name: "react-bootstrap",
-        url: "https://react-bootstrap.github.io/components/tabs/"
-      },
+          name: "react-bootstrap",
+          url: "https://react-bootstrap.github.io/components/tabs/"
+        },
         {
-        name: "kích thước màn hình",
-        url: "https://lockex1987.github.io/posts/js%20-%20screen%20size/"
-      },
+          name: "kích thước màn hình",
+          url: "https://lockex1987.github.io/posts/js%20-%20screen%20size/"
+        },
         {
-        name: "select custom",
-        url: "https://openbase.com/categories/js/best-react-select-libraries"
-      },
+          name: "select custom",
+          url: "https://openbase.com/categories/js/best-react-select-libraries"
+        },
 
-    ],
+      ],
       vat: [{
         name: "flexbox",
         url: "https://codepen.io/enxaneta/full/adLPwv/"
@@ -103,9 +107,13 @@
       {
         name: "trộn màu",
         url: "https://magic.reactjs.net/htmltojsx.htm"
+      },
+      {
+        name: "gán link deploy react",
+        url: "https://github.com/mars/create-react-app-buildpack"
       },]
     }
-    document.getElementById("google").innerHTML = data.google.map(item => `<div><a href=${item.url} target="_bank">${item.name}</a></div>`).join()
+    document.getElementById("google").innerHTML = data.google.map(item => `<div><a href=${item.url} target="_bank">${item.name}</a></div>`)
     document.getElementById("mxh").innerHTML = data.mxh.map(item => `<div><a href=${item.url} target="_bank">${item.name}</a></div>`)
     document.getElementById("vat").innerHTML = data.vat.map(item => `<div><a href=${item.url} target="_bank">${item.name}</a></div>`)
     document.getElementById("app").innerHTML = data.app.map(item => `<div><a href=${item.url} target="_bank">${item.name}</a></div>`)
